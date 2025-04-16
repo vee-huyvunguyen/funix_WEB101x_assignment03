@@ -1,0 +1,59 @@
+@media screen and (max-width: 600px) {
+  #topnav-candidate-name {
+    display: none;
+  }
+  /* The laptop grid columns layout is 5 columns,
+      mobile is 4 rows (after #topnav-candidate-name is hidden) */
+  .topnav {
+    display: flex;
+    flex-direction: column;   
+    width: 100%;
+  }
+  .topnav-item {
+    width: 100%;
+    justify-content: flex-start !important; /* Force left alignment */
+    padding: 5px;
+    text-transform: uppercase;
+  }
+
+  #personal-info {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for mobile */
+  }
+
+  #personal-info-summary {
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+  }
+  #credibility {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .credibility-item {
+    padding: 2rem;
+  }
+  .certification-container {
+    grid-template-columns: 1fr;
+    gap: 0px;
+    padding: 0px;
+  }
+  .certification {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-left: 0px;
+    border-bottom: 1px solid orange;
+  }
+  .certification img {
+    width: 90%;
+    height: auto;
+  }
+
+  .project-container {
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 1rem;
+  }
+}

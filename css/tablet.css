@@ -1,0 +1,66 @@
+@media screen and (max-width: 992px) and (min-width: 600px) {
+  #topnav-candidate-name {
+    display: none;
+  }
+  /* The laptop grid columns layout is 5 columns,
+  tablet is 4 columns (after #topnav-candidate-name is hidden) */
+  .topnav {
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+  }
+  #personal-info-summary {
+    padding: 1rem;
+  }
+  #personal-info-details {
+    padding: 1rem;
+  }
+  #personal-info h2{
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+  }
+  #credibility {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+  .credibility-item {
+    padding: 2rem;
+  }
+  .certification-container {
+    gap: 0px;
+    padding: 0px;
+  }
+  .certification {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-left: 1px solid orange;
+  }
+  .certification img {
+    width: 90%;
+    height: auto;
+  }
+  #projects {
+    padding: 1rem;
+  }
+  .project-container {
+    width: 100%;
+    gap: 1rem;
+  }
+  
+  .project-quickinfo {
+    gap: 1rem;
+    margin: 0rem;
+    padding: 1rem;
+  }
+  
+  .project-description table {
+    width: 100%;
+  }
+  
+  .project-description td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+  }
+}
