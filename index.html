@@ -8,13 +8,18 @@
     <link rel="stylesheet" href="./css/mobile.css" />
     <link rel="stylesheet" href="./css/tablet.css" />
     <link rel="stylesheet" href="./css/font.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <title>Assignment03</title>
   </head>
   <body>
     <div id="banner">
       <img src="./images/banner.jpg" alt="resume-banner" />
-      <div id="banner-text"
+      <div id="banner-text">
         <h1>Nguyễn Vũ Huy</h1>
         <p>Data Engineer</p>
       </div>
@@ -45,33 +50,45 @@
       <div id="personal-info-summary">
         <h2>Mục tiêu nghề nghiệp</h2>
         <p>
-          Là một Data Engineer với gần 3 năm kinh nghiệm trong ngành y tế và bán lẻ,
-          tôi tự tin bản thân có thể giải quyết các bài toán dữ liệu lớn mà bạn đang gặp phải. 
-          Tôi mong muốn được làm việc trong những dự án lớn và có cơ hội phát triển bản thân.
+          Là một Data Engineer với gần 3 năm kinh nghiệm trong ngành y tế và bán
+          lẻ, tôi tự tin bản thân có thể giải quyết các bài toán dữ liệu lớn mà
+          bạn đang gặp phải. Tôi mong muốn được làm việc trong những dự án lớn
+          và có cơ hội phát triển bản thân.
         </p>
       </div>
       <div id="personal-info-details">
         <h2>Thông tin cá nhân</h2>
-        <p><b>Giới tính</b> : Nam</p>
-        <p><b>Ngày sinh</b> : 30/02/2000</p>
-        <p><b>Điện thoại</b> : (+84) 912398988</p>
-        <p><b>Email</b> : huynvfx61609@funix.edu.vn</p>
-        <p><b>Địa chỉ</b> : Hà Nội, Việt Nam</p>
-        <p><b>Website</b> : https://github.com/vee-huyvunguyen/</p>
-        <div class="contacts">
-          <div>
-            <a href="https://github.com/vee-huyvunguyen/">
-              <i class="icon-github-circled"></i>
-            </a>
-            <a href="http://linkedin.com/in/vee-hvunguyen">
-              <i class="icon-linkedin-circled"></i>
-            </a>
-            <a href="https://www.facebook.com/HWEEusuallyASK/">
-              <i class="icon-facebook-circled"></i>
-            </a>
-            <a href="mailto:huynvfx61609@funix.edu.vn">
-              <i class="icon-mail-alt"></i>
-            </a>
+        <div id="reader-email-gather-container">
+          <form>
+            <input id="reader-email" alt="" placeholder="Enter Email" />
+            <p class="text-muted small">Hãy nhập email để xác thực</p>
+            <button id="reader-email-btn" class="btn btn-primary">
+              Submit
+            </button>
+          </form>
+        </div>
+        <div id="personal-info-container" class="d-none">
+          <p><b>Giới tính</b> : Nam</p>
+          <p><b>Ngày sinh</b> : 30/02/2000</p>
+          <p><b>Điện thoại</b> : (+84) 912398988</p>
+          <p><b>Email</b> : huynvfx61609@funix.edu.vn</p>
+          <p><b>Địa chỉ</b> : Hà Nội, Việt Nam</p>
+          <p><b>Website</b> : https://github.com/vee-huyvunguyen/</p>
+          <div class="contacts">
+            <div>
+              <a href="https://github.com/vee-huyvunguyen/">
+                <i class="icon-github-circled"></i>
+              </a>
+              <a href="http://linkedin.com/in/vee-hvunguyen">
+                <i class="icon-linkedin-circled"></i>
+              </a>
+              <a href="https://www.facebook.com/HWEEusuallyASK/">
+                <i class="icon-facebook-circled"></i>
+              </a>
+              <a href="mailto:huynvfx61609@funix.edu.vn">
+                <i class="icon-mail-alt"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -82,7 +99,8 @@
           <h2 class="section-title">Kinh nghiệm</h2>
           <i class="ic-toolbox"></i>
         </div>
-        <ul class="section-content">
+        <button class="credibitity-view-more">▼ VIEW MORE</button>
+        <ul class="section-content d-none">
           <li class="experience-item">
             <h3>Data Engineer - Công ty FPT Software</h3>
             <p class="date">03/2024 - <span class="current">Hiện tại</span></p>
@@ -120,7 +138,8 @@
           <h2 class="section-title">Học vấn</h2>
           <i class="ic-pencil"></i>
         </div>
-        <ul class="section-content">
+        <button class="credibitity-view-more">▼ VIEW MORE</button>
+        <ul class="section-content d-none">
           <li class="education-item">
             <h3>Đại học Khoa học tự nhiên Hà Nội</h3>
             <p class="date">06/2018 - 05/2023</p>
@@ -145,7 +164,8 @@
           <h2 class="section-title">Hoạt động</h2>
           <i class="ic-toolbox"></i>
         </div>
-        <ul class="section-content">
+        <button class="credibitity-view-more">▼ VIEW MORE</button>
+        <ul class="section-content d-none">
           <li class="activity-item">
             <h3>Trợ Giảng viên AWS tại MindX</h3>
             <p class="date">12/2024 - 03/2025</p>
@@ -162,7 +182,8 @@
           <h2 class="section-title">Sở thích</h2>
           <i class="ic-telescope"></i>
         </div>
-        <div class="section-content">
+        <button class="credibitity-view-more">▼ VIEW MORE</button>
+        <div class="section-content d-none">
           <div class="hobby-item">
             <i class="ic-megaphone"></i>
             <p>Âm nhạc</p>
@@ -187,7 +208,8 @@
           <h2 class="section-title">Ngôn ngữ</h2>
           <i class="ic-mic"></i>
         </div>
-        <div class="section-content">
+        <button class="credibitity-view-more">▼ VIEW MORE</button>
+        <div class="section-content d-none">
           <div class="language-item">
             <p>Tiếng Anh - IELTS 7.5</p>
             <div class="skill-level-bar">
@@ -220,7 +242,8 @@
           <h2 class="section-title">Kỹ năng</h2>
           <i class="ic-tools-2"></i>
         </div>
-        <div class="section-content">
+        <button class="credibitity-view-more">▼ VIEW MORE</button>
+        <div class="section-content d-none">
           <div class="skill-item">
             <p class="skill-name">HTML/CSS - Fundamental</p>
             <div class="skill-level-bar">
@@ -443,5 +466,11 @@
         </a>
       </div>
     </footer>
+    <script src="./script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
