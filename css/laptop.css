@@ -1,296 +1,301 @@
 /* Reset CSS */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-  }
-  #banner {
-    position: relative;
-    width: 100%;
-    height: 50vh;
-    overflow: hidden;
-  }
-  
-  #banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.7);
-  }
-  
-  #banner-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-  }
-  
-  #banner-text h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-  }
-  .topnav {
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
-    background-color: white;
-    width: 70%;
-    margin: 0 auto;
-  }
-  
-  .topnav div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-right: 1px solid #ddd;
-    height: 100%;
-  }
-  
-  .topnav a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .topnav i {
-    margin-right: 0.5rem;
-    color: #199cdb;
-  }
-  
-  #topnav-candidate-name {
-    text-align: center;
-    display: block;
-  }
-  
-  
-  #topnav-personal-info {
-    border-left: 1px solid #ddd;
-  }
-  #personal-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: #f9f9f9;
-  }
-  
-  #personal-info-summary {
-    background-color: rgba(240, 240, 240, 255);
-    padding: 3rem;
-  }
-  
-  #personal-info-details {
-    background-color: rgba(245, 245, 245, 255);
-    padding: 3rem;
-  }
-  
-  #personal-info-details .contacts {
-    margin-top: 1rem;
-  }
-  
-  #personal-info-details .contacts i {
-    font-size: 1.5rem;
-    margin-right: 1rem;
-    color: #199cdb;
-  }
-  #credibility {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: top;
-    gap: 2rem;
-    padding: 3rem;
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  .credibility-item {
-    border: 1px solid #ddd;
-    padding: 3rem;
-  }
-  
-  .credibility-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 2rem;
-  }
-  .credibitity-view-more {
-    border-radius: 20px;
-    background-color: #ffeb3b; /* Yellow color */
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-  .section-content li::marker {
-    color: #199cdb;
-    font-size: 1.5em;
-  }
-  
-  .credibility-header i {
-    text-shadow: 0px 0px 1px white;
-    color: grey;
-    font-size: 2.5rem;
-  }
-  
-  .date {
-    color: #666;
-    font-style: italic;
-  }
-  
-  .current {
-    background-color: #199cdb;
-    color: white;
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
-  }
-  #credibility-hobby .section-content {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-  }
-  
-  .hobby-item {
-    text-align: center;
-  }
-  
-  .hobby-item i {
-    width: 50px;
-    height: 50px;
-    border: 1px solid #199cdb;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 0.5rem;
-    color: #199cdb;
-  }
-  
-  .skill-level-bar-filled {
-    background: #199cdb;
-    display: inline-block;
-    height: 2px;
-    margin-right: 10px;
-    width: 45px;
-  }
-  
-  .skill-level-bar-empty {
-    background: #ddd;
-    display: inline-block;
-    height: 2px;
-    margin-right: 10px;
-    width: 45px;
-  }
-  #certifications {
-    padding: 3rem;
-    background-color: rgba(247, 247, 247, 255);
-  }
-  
-  #certifications-section-title {
-    margin-bottom: 2rem;
-  }
-  
-  .certification-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    padding: 1rem;
-  }
-  
-  .certification {
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    gap: 1rem;
-    border-left: 1px solid orange;
-  }
-  
-  .certification img {
-    width: 200px;
-    height: auto;
-  }
-  
-  #projects {
-    padding: 3rem;
-  }
-  .project-container {
-    display: grid;
-    width: 80%;
-    margin: 0 auto;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
-    justify-content: center;
-  }
-  
-  .project {
-    border: 1px solid #ddd;
-  }
-  
-  #projects-section-title {
-    margin-bottom: 2rem;
-  }
-  
-  .project img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .project-title {
-    text-transform: uppercase;
-    padding: 1rem;
-  }
-  
-  .project-quickinfo {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin: 1rem 0;
-    padding: 1rem 0;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .project-description table {
-    width: 100%;
-  }
-  
-  .project-description td {
-    padding: 0.5rem;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .project-description td:first-child {
-    width: 30%;
-    font-weight: bold;
-  }
-  #contact-info {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 2rem;
-    background-color: rgba(247, 247, 247, 255);
-  }
-  
-  .contact-option {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  
-  .contact-option a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .contact-option i {
-    color: #199cdb;
-    font-size: 1.5rem;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+#banner {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+}
+
+#banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+#banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+#banner-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.topnav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+  background-color: white;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.topnav div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-right: 1px solid #ddd;
+  height: 100%;
+}
+
+.topnav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.topnav i {
+  margin-right: 0.5rem;
+  color: #199cdb;
+}
+
+#topnav-candidate-name {
+  text-align: center;
+  display: block;
+}
+
+#topnav-personal-info {
+  border-left: 1px solid #ddd;
+}
+#personal-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #f9f9f9;
+}
+
+#personal-info-summary {
+  background-color: rgba(240, 240, 240, 255);
+  padding: 3rem;
+}
+
+#personal-info-details {
+  background-color: rgba(245, 245, 245, 255);
+  padding: 3rem;
+}
+
+#personal-info-details .contacts {
+  margin-top: 1rem;
+}
+
+#personal-info-details .contacts i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #199cdb;
+}
+#credibility {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: top;
+  gap: 2rem;
+  padding: 3rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.credibility-item {
+  border: 1px solid #ddd;
+  padding: 3rem;
+}
+
+.credibility-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+
+.credibitity-view-more {
+  display: none; /* Hide by default */
+  border-radius: 20px;
+  background-color: #ffeb3b; /* Yellow color */
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.credibility-item:hover .credibitity-view-more {
+  display: block; /* Show on hover */
+}
+
+.section-content li::marker {
+  color: #199cdb;
+  font-size: 1.5em;
+}
+
+.credibility-header i {
+  text-shadow: 0px 0px 1px white;
+  color: grey;
+  font-size: 2.5rem;
+}
+
+.date {
+  color: #666;
+  font-style: italic;
+}
+
+.current {
+  background-color: #199cdb;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+#credibility-hobby .section-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.hobby-item {
+  text-align: center;
+}
+
+.hobby-item i {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #199cdb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.5rem;
+  color: #199cdb;
+}
+
+.skill-level-bar-filled {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+.skill-level-bar-empty {
+  background: #ddd;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+#certifications {
+  padding: 3rem;
+  background-color: rgba(247, 247, 247, 255);
+}
+
+#certifications-section-title {
+  margin-bottom: 2rem;
+}
+
+.certification-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.certification {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 1rem;
+  border-left: 1px solid orange;
+}
+
+.certification img {
+  width: 200px;
+  height: auto;
+}
+
+#projects {
+  padding: 3rem;
+}
+.project-container {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  justify-content: center;
+}
+
+.project {
+  border: 1px solid #ddd;
+}
+
+#projects-section-title {
+  margin-bottom: 2rem;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+}
+
+.project-title {
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.project-quickinfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+  padding: 1rem 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.project-description table {
+  width: 100%;
+}
+
+.project-description td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.project-description td:first-child {
+  width: 30%;
+  font-weight: bold;
+}
+#contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: rgba(247, 247, 247, 255);
+}
+
+.contact-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-option a {
+  text-decoration: none;
+  color: #333;
+}
+
+.contact-option i {
+  color: #199cdb;
+  font-size: 1.5rem;
+}
